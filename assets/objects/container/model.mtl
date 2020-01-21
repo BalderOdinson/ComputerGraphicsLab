@@ -1,0 +1,16 @@
+# 
+# Wavefront materialSource file
+# Created in RealityCapture v1.0.3.3943
+# www.capturingreality.com
+# 
+
+
+newmtl model_Material_u1_v1
+Ka 1 1 1
+Ks 1 1 1
+Kd 1 1 1
+d 1
+Ns 32
+illum 1
+map_Kd container2.png
+map_Ks container2_specular.png

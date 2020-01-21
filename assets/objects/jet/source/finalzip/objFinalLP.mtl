@@ -1,0 +1,8 @@
+newmtl 02___Default
+Ka 0.2 0.2 0.2
+Ks 1 1 1
+Kd 1 1 1
+d 1
+Ns 60
+illum 1
+map_Kd objFinalLP_02___Default_color.png

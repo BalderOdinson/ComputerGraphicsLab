@@ -1,0 +1,3 @@
+[submodule "LavaVk"]
+	path = LavaVk
+	url = https://github.com/BalderOdinson/LavaVk.git
