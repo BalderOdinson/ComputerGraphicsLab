@@ -15,17 +15,17 @@ std::type_index BSplineSample::getType() const
 
 void BSplineSample::initialize()
 {
-    Application::initialize();
+	LavaVk::App::initialize();
 }
 
 void BSplineSample::installDependencies(LavaVk::DIContainer &container)
 {
-    Application::installDependencies(container);
+	LavaVk::App::installDependencies(container);
 }
 
 void BSplineSample::installConfigurations(LavaVk::DIContainer &container)
 {
-    LavaVk::LinuxApplication::installConfigurations(container);
+    LavaVk::App::installConfigurations(container);
 
     container.option<LavaVk::WindowOptions>()->fullscreenMode = true;
     container.option<LavaVk::WindowOptions>()->displayId = 1;
@@ -66,7 +66,7 @@ void BSplineSample::update(float deltaTime)
 
 void BSplineSample::finish()
 {
-    Application::finish();
+	LavaVk::App::finish();
 }
 
 LavaVk::SharedSceneLoader BSplineSample::startScene()

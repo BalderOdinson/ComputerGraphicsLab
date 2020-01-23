@@ -16,17 +16,17 @@ std::type_index ParticlesSample::getType() const
 
 void ParticlesSample::initialize()
 {
-    Application::initialize();
+	LavaVk::App::initialize();
 }
 
 void ParticlesSample::installDependencies(LavaVk::DIContainer &container)
 {
-    Application::installDependencies(container);
+	LavaVk::App::installDependencies(container);
 }
 
 void ParticlesSample::installConfigurations(LavaVk::DIContainer &container)
 {
-    LavaVk::LinuxApplication::installConfigurations(container);
+	LavaVk::App::installConfigurations(container);
 
     container.option<LavaVk::WindowOptions>()->fullscreenMode = true;
     container.option<LavaVk::WindowOptions>()->displayId = 1;
@@ -68,7 +68,7 @@ void ParticlesSample::update(float dt)
 
 void ParticlesSample::finish()
 {
-    Application::finish();
+	LavaVk::App::finish();
 }
 
 LavaVk::SharedSceneLoader ParticlesSample::startScene()
