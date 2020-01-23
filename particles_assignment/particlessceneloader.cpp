@@ -35,7 +35,6 @@ ParticlesSceneLoader::load(const LavaVk::Core::SharedCommandBuffer &cmd)
     auto waterFallNode = LavaVk::Node::make("waterFallNode");
     auto waterNode = LavaVk::Node::make("waterNode");
     auto fountainNode = LavaVk::Node::make("fountainNode");
-    auto swordNode = LavaVk::Node::make("swordNode");
     auto cameraNode = LavaVk::Node::make("cameraNode");
     auto lightNode = LavaVk::Node::make("lightNode");
     scene->addChild(waterFallNode);
@@ -43,22 +42,6 @@ ParticlesSceneLoader::load(const LavaVk::Core::SharedCommandBuffer &cmd)
     scene->addChild(fountainNode);
     scene->addChild(cameraNode);
     scene->addChild(lightNode);
-    scene->addChild(swordNode);
-
-    /*auto containerNode = LavaVk::Node::make("containerNode");
-    waterFallNode->addChild(containerNode);
-    auto containerMesh = containerNode->setComponent<LavaVk::Mesh>(
-            LavaVk::make<LavaVk::ObjectFileMeshSource>(CONTAINER_PATH, true, true, false), "container");
-    containerNode->getTransform()->setTranslation(ContainerPosition);
-    containerNode->getTransform()->setScale(ContainerScale);
-    containerMesh->load(cmd);*/
-
-    /*auto swordMesh = swordNode->setComponent<LavaVk::Mesh>(
-            LavaVk::make<LavaVk::ObjectFileMeshSource>(SWORD_PATH, true, true, false), "sword");
-    swordNode->getTransform()->setTranslation(SwordPosition);
-    swordNode->getTransform()->setScale(SwordScale);
-    swordMesh->load(cmd);*/
-
 
     auto fountainMesh = fountainNode->setComponent<LavaVk::Mesh>(
             LavaVk::make<LavaVk::ObjectFileMeshSource>(FOUNTAIN_PATH, true, true, false), "fountain");
@@ -94,9 +77,9 @@ ParticlesSceneLoader::load(const LavaVk::Core::SharedCommandBuffer &cmd)
     waterFallNode->setLayer(1);
     waterFall->particleCount = 100000;
     waterFall->aliveParticlesCount = 0;
-    waterFall->sizeMultiplier = 0.005f;
+    waterFall->sizeMultiplier = 0.004f;
     waterFall->stretchWithVelocity = true;
-    waterFall->motionBlur = 0.02f;
+    waterFall->motionBlur = 0.025f;
     waterFall->particleProperties.emplace_back();
     waterFall->particleProperties[0].source = glm::vec3(0.f, 0.f, 0.f);
     waterFall->particleProperties[0].color = glm::vec4(.0f, .467f, .745f, .6f);
@@ -134,6 +117,8 @@ ParticlesSceneLoader::load(const LavaVk::Core::SharedCommandBuffer &cmd)
     water->particleCount = 1000000;
     water->aliveParticlesCount = 0;
     water->sizeMultiplier = 0.01f;
+    water->stretchWithVelocity = true;
+    water->motionBlur = 0.1f;
     water->particleProperties.emplace_back();
     water->particleProperties[0].source = glm::vec3(-.05f, -.02f, 0.f);
     water->particleProperties[0].color = glm::vec4(.0f, .467f, .745f, .6f);
