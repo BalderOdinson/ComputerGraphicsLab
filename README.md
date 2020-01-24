@@ -6,6 +6,7 @@ Assignments done for course Computer Graphics on FER, University of Zagreb. Also
 - [Introduction](#introduction)
 - [Setup](#setup)
 - [Samples](#samples)
+- [License](#license)
   
 ## Introduction
   
@@ -33,3 +34,15 @@ Each sample contains readme with build instractions.
 
 ### Deferred rendering
 [Link](https://github.com/BalderOdinson/ComputerGraphicsLab/blob/master/deferred_assignment/README.md) to deferred rendering sample.
+
+## License
+
+See [LICENSE](LICENSE).
+
+License for LavaVk Framework can be found [here](https://github.com/BalderOdinson/LavaVk/blob/master/README.md#license)
+
+Assets used in this project:
+  - [Persian City](https://sketchfab.com/3d-models/persian-city-0147294fccfa461db6eb7c5ac80fd6ff)
+  - [Jet](https://sketchfab.com/3d-models/jet-95bdc86b7423424ba16683ee5199600c)
+  - [Cloudy skyboxes](https://opengameart.org/content/cloudy-skyboxes)
+  - [Garden](https://sketchfab.com/3d-models/garden-0486513a88c74f7eb2a3a809dd1094eb)
