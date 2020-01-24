@@ -23,7 +23,8 @@ void WaterFallAnimation::update(float deltaTime)
     }
     else if(t < 4.f)
     {
-        particles->particleProperties[0].deathProbability -= deltaTime * 0.15f;
+        particles->particleProperties[0].deathProbability -= deltaTime * 0.05f;
+        particles->particleProperties[0].source.y += deltaTime * 0.06f;
         t += deltaTime;
     }
 }

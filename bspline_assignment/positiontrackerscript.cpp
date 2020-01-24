@@ -23,7 +23,7 @@ void PositionTrackerScript::initialize(LavaVk::DIContainer &container)
                 {
                     const auto &keyEvent = dynamic_cast<const LavaVk::KeyInputEventArgs &>(args);
 
-                    if(keyEvent.getCode() == LavaVk::KeyCode::KP_5 && keyEvent.getAction() == LavaVk::KeyAction::Down)
+                    if(keyEvent.getCode() == LavaVk::KeyCode::_5 && keyEvent.getAction() == LavaVk::KeyAction::Down)
                         save = true;
                     /*else if(keyEvent.getCode() == LavaVk::KeyCode::KP_1 && keyEvent.getAction() == LavaVk::KeyAction::Up)
                         positions.emplace_back(getNode()->getParent()->getTransform()->getTranslation());*/

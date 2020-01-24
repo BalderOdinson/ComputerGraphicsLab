@@ -27,8 +27,8 @@ void BSplineSample::installConfigurations(LavaVk::DIContainer &container)
 {
     LavaVk::App::installConfigurations(container);
 
-    container.option<LavaVk::WindowOptions>()->fullscreenMode = true;
-    container.option<LavaVk::WindowOptions>()->displayId = 1;
+    container.option<LavaVk::WindowOptions>()->fullscreenMode = false;
+    container.option<LavaVk::WindowOptions>()->displayId = 0;
     container.option<LavaVk::ApplicationOption>()->appName = "B-spline sample";
     /*container.option<LavaVk::Core::SwapchainOptions>()->presentMode = vk::PresentModeKHR::eFifo;*/
     container.addOption<LavaVk::MultisamplingOptions>(

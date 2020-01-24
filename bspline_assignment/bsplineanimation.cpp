@@ -83,7 +83,8 @@ void BSplineAnimation::animate(const LavaVk::SharedTransform &transform, float d
 
     auto newOrientation = glm::quatLookAt(glm::normalize(-tangent), glm::vec3(0.f, 1.f, 0.f));
 
-    auto roll = glm::slerp(glm::angleAxis(q0, glm::vec3(0.f, 0.f, 1.f)), glm::angleAxis(q1, glm::vec3(0.f, 0.f, 1.f)), t);
+    auto roll = glm::slerp(glm::angleAxis(q0, glm::vec3(0.f, 0.f, 1.f)),
+                           glm::angleAxis(q1, glm::vec3(0.f, 0.f, 1.f)), t);
 
     transform->setTranslation(newPoint);
     transform->setRotation(glm::normalize(newOrientation * roll));

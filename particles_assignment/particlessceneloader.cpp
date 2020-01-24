@@ -116,11 +116,9 @@ ParticlesSceneLoader::load(const LavaVk::Core::SharedCommandBuffer &cmd)
     waterNode->setComponent<WaterFallAnimation>();
     water->particleCount = 1000000;
     water->aliveParticlesCount = 0;
-    water->sizeMultiplier = 0.01f;
-    water->stretchWithVelocity = true;
-    water->motionBlur = 0.1f;
+    water->sizeMultiplier = 0.015f;
     water->particleProperties.emplace_back();
-    water->particleProperties[0].source = glm::vec3(-.05f, -.02f, 0.f);
+    water->particleProperties[0].source = glm::vec3(-.05f, -.2f, 0.f);
     water->particleProperties[0].color = glm::vec4(.0f, .467f, .745f, .6f);
     water->particleProperties[0].colorDecayRate = glm::vec4(.0f, .0f, .0f, .0f);
     water->particleProperties[0].lifetime = 0.05f;
