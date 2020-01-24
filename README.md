@@ -10,7 +10,7 @@ Assignments done for course Computer Graphics on FER, University of Zagreb. Also
   
 ## Introduction
   
-This repostory contains samples for LavaVk engine and completed exercises for Computer Graphics course. Each samples contains their own readme file.
+This repostory contains samples for [LavaVk engine](https://github.com/BalderOdinson/LavaVk) and completed exercises for Computer Graphics course. Each samples contains their own readme file.
 
 ## Setup
 
