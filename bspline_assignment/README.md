@@ -5,7 +5,7 @@ The assignment was to draw cubic basis spline curve with only periodic segment a
 
 ## Build instructions
 
-Sample also requires assets contained in this repository. Application assumes that assets folder is one directory back from the active directory. If that's not the case move assets to desired location.
+Sample also requires assets contained in this repository. Application assumes that assets folder is one directory back from the active directory. If that's not the case move assets to appropriate location.
 
 ### Windows
 
