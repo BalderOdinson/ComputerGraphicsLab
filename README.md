@@ -22,7 +22,7 @@ Clone the repo with submodules using the following command:
 git clone --recurse-submodules https://github.com/BalderOdinson/ComputerGraphicsLab.git
 ```
 
-Each sample contains readme with build instractions.
+Each sample contains readme with build instructions.
 
 ## Samples
 
