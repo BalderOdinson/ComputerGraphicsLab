@@ -25,8 +25,8 @@ void DeferredSample::installConfigurations(LavaVk::DIContainer &container)
 {
 	LavaVk::App::installConfigurations(container);
 
-    container.option<LavaVk::WindowOptions>()->fullscreenMode = false;
-    container.option<LavaVk::WindowOptions>()->displayId = 0;
+    container.option<LavaVk::WindowOptions>()->fullscreenMode = true;
+    container.option<LavaVk::WindowOptions>()->displayId = 1;
     container.option<LavaVk::ApplicationOption>()->appName = "Deferred rendering sample";
     /*container.option<LavaVk::ApplicationOption>()->enableDebug = false;*/
     /*container.option<LavaVk::Core::SwapchainOptions>()->presentMode = vk::PresentModeKHR::eFifo;*/
@@ -37,6 +37,8 @@ void DeferredSample::installConfigurations(LavaVk::DIContainer &container)
                 return new LavaVk::MultisamplingOptions(
                         vk::SampleCountFlagBits::e1);
             });
+
+    container.option<LavaVk::ThreadingOptions>()->setThreadCount(6);
 }
 
 void DeferredSample::update(float deltaTime)
